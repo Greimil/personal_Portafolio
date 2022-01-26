@@ -1,0 +1,417 @@
+/*--------------------------------------------------------------------------------------------------------------------- Menu resposive------------------------------------------------------------ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+}
+
+.icon{
+    list-style:none 
+}
+
+.menu{
+    background-color: #c33047;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-shadow:5px 0 10px rgba(0, 0, 0, .6);
+    
+}
+
+.logo{
+    color: #fff;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+
+.menu-items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu-items li{
+    border-radius: 3px;
+    margin: 0 5px;
+    
+}
+
+.menu-items li a{
+    padding:7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.menu-items li:hover, li.active{
+    background-color: rgba(0,0,0,.3);
+    transition: .4s;
+}
+
+.btn-menu{
+    margin-right: 30px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show{
+    top: 65px;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------ Estilos en genral---------------------------------------------------------------------------------- */
+
+
+
+/*---------------------------------------------------------------------------------------- Welcome sectiion--------------------------------------------------------------------  */
+#welcome-section{
+    height: auto; 
+    background: linear-gradient(45deg, #393c3f, #2d2e31, #202022, #1a191b);
+    min-height: 100vh;
+}
+
+.general-welcome{
+    width: 100vw;
+    max-width: 150vw; 
+}
+
+#welcome-section h1, p{
+    text-align: center;
+    color:#fff;
+}
+
+.sobreMi {
+   width: 80%;
+   margin: auto;
+   padding-bottom: 25px;
+      
+}
+
+#yo-text{
+    font-size: 2.5em;
+}
+
+.sobreMi p {
+    text-align: justify;
+    font-size: 1.875rem;
+}
+
+
+
+#img-profile{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 15px;
+}
+
+
+
+.titulo1{
+    font-size: 4.0625rem;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------- Projects section --------------------------------------------------- */
+
+
+#projects{
+    background-color: #45567d;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+
+#titulo_principal_projects{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    
+    padding-top: 25px   ;
+}
+
+
+#titulo_principal_projects:hover{
+    color: #c33047;
+    transition: .4s;
+}
+
+
+
+.flex-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-item a img{
+    width: 24.875rem;
+    height: 24.1875rem;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    
+}
+
+.flex-item p{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.flex-item {
+    width: 25rem;
+    height: 27.5rem;
+    background-color: #303841;
+    margin: 65px 30px 65px 30px;
+    border-radius: 15px;
+}
+
+
+
+
+
+.flex-item a{
+    text-decoration: none;
+}
+
+
+
+
+
+.titulo{
+    display: inline;
+    margin: auto;
+    text-align: center;
+    color: white;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+
+#subtitulo{
+    color:#be3144 ;
+    font-size: 16px ;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------contact section-------------------------------------------------------------------------- */
+#contact{
+    background-color: #303841 ;
+    width: 100%;
+    height: 50vh;
+  
+}
+
+
+
+#a{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 50px   ;
+}
+
+#b{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 50px;
+}
+
+.container-links{
+    width: auto;
+    height: 50%;
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;
+}
+
+
+.link{
+    margin: auto;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #c33047;
+    text-decoration: none;
+    font-size: 30px;
+    transition: .4s;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------media querys------------------------------------------------------------- */
+
+
+
+
+
+@media screen and (max-width: 992px){
+    .logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+
+    .menu-items li a {
+        font-size: 16px;
+    }
+
+
+   
+    
+    .sobreMi p {
+        text-align: justify;
+        font-size: 22px;
+        word-wrap: normal;
+        
+    }
+
+
+
+}
+
+@media screen and (max-width: 858px) {
+    .menu{
+        height: 65px;
+    }
+
+    .btn-menu{
+        display: inline-flex;
+    }
+
+    .menu-items{
+        position: fixed;
+        width: 100vw;
+        height: cal(100% - 65px);
+        background: #414141;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu-items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu-items li:hover{
+        background: none;
+    }
+
+    .menu-items li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .menu-items li a:hover{
+        color: #c33047;
+    }
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+   
+     
+}
+
+
+
+
+
+
+
+ 
+@media screen and (max-width: 600px){
+    
+
+    .flex-item {
+        width: 200px;
+        height: 280px;
+    }
+    .flex-item a img{
+        width: 200px;
+        height: 240px;
+    }
+
+    .titulo1{
+        font-size: 1.875rem;
+    }
+
+    #yo-text{
+        font-size: 1rem;
+    }
+    
+    #titulo_principal_projects{
+        font-size: 2.1875em;
+    }
+
+
+    #a, #b {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    .link{
+        font-size: 20px;
+    }
+
+    .link:hover{
+        font-size: 30px;
+    }
+
+
+}    
